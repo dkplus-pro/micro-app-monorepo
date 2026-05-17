@@ -1,13 +1,10 @@
 {
-  "name": "ai-mind-clone-fe-monorepo",
+  "name": "dkplus-fe-monorepo",
   "version": "0.0.0",
   "private": true,
   "packageManager": "pnpm@10.10.0",
   "scripts": {
-    "dev:main": "pnpm --filter @ai-mind-clone/miniapp-main dev:mp-weixin",
-    "dev:companion": "pnpm --filter @ai-mind-clone/miniapp-companion dev:mp-weixin",
     "build": "turbo run build",
-    "build:mp-weixin": "turbo run build:mp-weixin",
     "lint": "turbo run lint && pnpm run lint:style",
     "lint:style": "stylelint \"**/*.{vue,css}\" --ignore-path .stylelintignore --allow-empty-input",
     "prepare": "husky",
